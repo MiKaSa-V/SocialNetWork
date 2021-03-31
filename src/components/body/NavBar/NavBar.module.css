@@ -1,0 +1,17 @@
+.navbar {
+    padding: 20px;
+    border: 4px inset white;
+    border-radius: 5px;
+    margin-right: 5px;
+    text-align: center;
+}
+.linkBar {
+  margin-bottom: 10px;
+}
+.linkBar a{
+  color: white;
+  text-decoration: none;
+}
+.linkBar .activeLink {
+  color: red;
+}
