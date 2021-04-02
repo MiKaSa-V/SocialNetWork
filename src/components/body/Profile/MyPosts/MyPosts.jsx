@@ -1,16 +1,22 @@
 import React from 'react';
-import './MyPosts.css';
+import s from './MyPosts.module.css';
 import Post from './Post/Post';
 
 const MyPosts = () => {
     return (
-        <div>
+        <div className={s.myPosts}>
             My post
-            <div>
+            <div className={s.newPost}>
+                <div>
+                    <textarea></textarea>
+                </div>
+                <div>
+                <button>Add post</button>
+                </div>
                 New post
                 </div>
-            <Post message="Hello" likeCount="5"/>
-            <Post message="Hi" likeCount="25"/>
+                <Post message="Hello" likeCount="5"/>
+                {/* <Post message="Hello" likeCount="5"/> */}
         </div>
     );
 }

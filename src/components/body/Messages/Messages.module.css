@@ -1,13 +1,20 @@
 .content {
-    grid-area: c;
     width: 100%;
     height: 350px;
     display: flex;
     justify-content: space-between;
     text-align: center;
+    position: relative;
 }
 .messages {
-
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    border: 4px inset white;
+    border-radius: 5px;
+    position: absolute;
+    left: 10px;
 }
 .mesItem {
     
@@ -17,7 +24,11 @@
     text-decoration: none;
 }
 .textMes {
-
+    position: absolute;
+    right: 50px;
+    border: 4px inset white;
+    border-radius: 5px;
+    padding: 10px;
 }
 .mesItem .item {
 
@@ -25,6 +36,6 @@
 .textMes .mes {
 
 }
-.activeMes {
+.mesItem a.activeMes {
     color: red;
 }
